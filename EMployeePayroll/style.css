@@ -122,3 +122,18 @@ label{
     margin-right: 12px;
 
 }
+select{
+    padding: 12px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    resize: vertical;
+    font: normal auto ;
+    letter-spacing: 1px;
+    color: #42515f;
+    background-color: transparent;
+    margin: auto;
+    margin: 10px;
+    align-content: center;
+    min-width: 120px;
+
+    }
