@@ -20,8 +20,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid orchid;
-    width: 80%;
+    border: 0px solid green;
+    width: 60%;
+    
 }
 
 .logo-content-img {
@@ -66,7 +67,7 @@ body {
 
 .form-head {
     font: normal normal bold 24px/37px Roboto;
-    font-family: 'Baloo Bhai 2', cursive;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 0px;
     color: #42515f;
     text-transform: capitalize;
@@ -79,11 +80,11 @@ body {
     flex-direction: row;
     margin-bottom: 10px;
     align-items: center;
-    border: 0px solid red;
+    border: 0px solid green;
 }
 
 .label {
-    min-width: 140px;
+    min-width: 100px;
 }
 
 label {
@@ -95,7 +96,7 @@ label {
     font-size: 16px;
     color: #42515f;
     opacity: 1;
-    font-family: 'Baloo Bhai 2', cursive;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .input {
@@ -143,12 +144,11 @@ select {
 
 .button {
     font-size: 20px;
-    font-family: 'Baloo Bhai 2', Fantasy;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif6;
     letter-spacing: 2px;
     color:black;
     opacity: 1;
-    
-    background: #5c0a30;
+    background: #82a70c;
     border: none;
     font-weight: normal;
     min-width: 120px;
@@ -158,11 +158,11 @@ select {
 }
 
 .button:hover {
-    background: #c20f1e;
+    background: #a2ca1e;
 }
 
 .submitButton {
-     background-color: #82a70c; 
+    background-color: #82a70c; 
     background:white 0% 0% no-repeat padding-box; 
     margin-right: 30px;
     border: 1px solid #0c0c0c;
@@ -194,51 +194,31 @@ error-output {
     color: red;
 }
 
-@media only screen and (max-width: 960px) {
-    .cancelButton {
-        margin-left: 0px;
-    }
-}
 
-@media only screen and (max-width: 600px) {
-    .form {
-        margin-top: 10px;
-    }
+@media only screen and (max-width: 900px) {
 
-    .row {
-        flex-direction: column;
-    }
-
-    .uploadButton {
-        justify-content: flex-start;
-    }
-
-    .profile-radio-button {
-        flex-flow: wrap;
-    }
-
-    .submit-reset {
-        width: 100%;
+    div {
         display: flex;
-        flex-grow: 1;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-bottom: 20px;
+        flex-wrap: wrap;
+        flex-shrink: initial;
+        flex-direction: row;
+        
+    }
+    .header-content{
+        height: 50px;
+        
     }
 
-    .submitButton {
-        margin: 0;
+    .header{
+        display: flex;
+        flex-wrap: nowrap;
     }
 
-    .buttonParent {
-        flex-direction: column-reverse;
-        align-items: flex-start;
+    .form{
+        width: 100%;
     }
-}
+    
 
-#notes {
-    background-color:yellowgreen;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 30px;
+
+
 }
